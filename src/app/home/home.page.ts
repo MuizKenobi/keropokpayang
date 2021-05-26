@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  // Optional parameters to pass to the swiper instance.
+  // See http://idangero.us/swiper/api/ for valid options.
+  slideOpts = {
+    initialSlide: 0,
+    speed: 400
+  };
   constructor() {}
-
 }
