@@ -1,58 +1,198 @@
 #card {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
-.card-head {
+// SECTION 1 START
+.section-1 {
   display: flex;
-  justify-content: center;
-  padding-top: 40px;
-}
-.card-head img {
-  width: 100%;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-.card-body {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: white;
-  width: 100%;
+  flex-direction: column;
+  background: #787272;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-top: 40px;
+  padding-top: 40px;
 }
 .heading {
   display: flex;
-  justify-content: center;
-  width: 90%;
-  font-size: 30px;
+  width: 80%;
+  text-align: center;
+  font-size: 3.6vw;
+  color: #eee8e8;
   font-weight: bold;
-  color: #c74242;
+}
+.sub-heading {
+  display: flex;
+  width: 70%;
+  text-align: center;
+  font-size: 1.8vw;
+  color: #eee8e8;
+  margin-bottom: 2vw;
+}
+.banner {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.img-banner-1 {
+  width: 60vw;
+  display: flex;
+}
+.submit-button {
+  background: #eb2526;
+  color: #eee8e8;
+  width: 28vw;
+  height: 5vw;
+  border-radius: 10px;
+  font-size: 1.8vw;
+  font-weight: bold;
+  margin-top: 4vw;
+}
+.sponsor {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vw;
+  margin-bottom: 10vw;
+}
+.sponsor img {
+  width: 10vw;
+}
+.sponsor-img-1 {
+  margin-right: 6vw;
+}
+.sponsor-img-3 {
+  margin-left: 6vw;
+}
+// SECTION 1 END
+// ******************************************
+// SECTION 2 START
+.section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4vw;
+  padding-bottom: 8vw;
+  background: #e1d8d9;
+}
+.profile-1, .profile-2, .profile-3, .profile-4 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img-1, .profile-img-2, .profile-img-3, .profile-img-4 {
+  display: flex;
+  width: 10vw;
+  margin-bottom: 2vw;
+  margin-top: 6vw;
+}
+.comment {
+  display: flex;
+  font-size: 1.8vw;
+  width: 50%;
+  margin-bottom: 2vw;
+  word-wrap: break-word;
   text-align: center;
 }
-.text {
+.name {
   display: flex;
-  width: 80%;
-  font-size: 16px;
-  margin-bottom: 6px;
+  font-size: 1.4vw;
+  color: #eb2526;
+  font-weight: bold;
+  margin-bottom: 1vw;
 }
-.video {
+.profession {
   display: flex;
-  width: 100%;
+  font-size: 1.2vw;
+  font-weight: bold;
+  font-style: italic;
 }
-.video > iframe{
-  width: 100%;
-  height: 400px;
-  border: none;
-  margin-top: 40px; 
+// SECTION END
+// ******************************************
+// SECTION START
+.section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background: white;
 }
-.gallery {
+.promo-heading {
+  display: flex;
+  font-size: 2.2vw;
+  width: 65%;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+.promo-img {
+  width: 48vw;
+  margin-top: 1vw;
+  margin-bottom: 4vw;
+}
+.promo {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+.promo-title {
+  font-size: 3vw;
+  font-weight: bold;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+.promo-desc {
+  font-size: 2.2vw;
+  margin-bottom: 40px;
+  line-height: 3.2vw;
+}
+.bold {
+  font-weight: bold;
+}
+.promo-image {
   display: grid;
   grid-template-columns: auto auto;
-  margin-top: 40px; 
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4vw;
 }
-.col-1, .col-2, .col-3, .col-4 {
-  width: 100%;
+.promo-img-1  {
+  width: 70vw;
+}
+.promo-img-2 {
+  width: 40vw;
+}
+.promo-img-3 {
+  width: 60vw;
+}
+// SECTION 3 END
+// *************************************
+// SECTION 4 START
+.section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background: #e1d8d9;
+}
+.promo-video {
+  display: flex;
+}
+.promo-video iframe {
+  width: 30vw;
+  height: 20vw;
+  padding: 10px;
 }
