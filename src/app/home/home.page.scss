@@ -198,4 +198,19 @@
 }
 .promo-desc-pointlist {
   font-size: 2vw;
+  width: 80%;
+  line-height: 3.4vw;
+}
+.promo-list-title {
+  display: flex;
+  justify-content: left !important;
+  align-items: center;
+  font-size: 2.6vw;
+  font-weight: bold;
+  margin-top: 3vw;
+}
+.promo-desc-numlist {
+  font-size: 2vw;
+  width: 80%;
+  line-height: 3.4vw;
 }
