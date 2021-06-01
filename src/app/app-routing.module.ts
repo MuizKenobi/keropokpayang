@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'shipping-policy',
+    loadChildren: () => import('./shipping-policy/shipping-policy.module').then( m => m.ShippingPolicyPageModule)
+  },
 ];
 
 @NgModule({
