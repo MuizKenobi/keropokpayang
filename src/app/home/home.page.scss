@@ -34,13 +34,21 @@
 }
 .banner {
   display: flex;
-  position: relative;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.img-banner-1 {
-  width: 60vw;
+.banner-video iframe{
+  width: 50vw;
+  height: 30vw;
+}
+.banner-image {
+  display: flex;
+  padding-top: 1vw;
+}
+.banner-image img {
+  width: 12vw;
   display: flex;
 }
 .submit-button {
@@ -160,12 +168,13 @@
 .bold {
   font-weight: bold;
 }
-.promo-image {
-  display: grid;
-  grid-template-columns: auto auto;
+.promo-banner iframe {
+  width: 50vw;
+  height: 30vw;
+}
+.section-3 .promo-image {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 4vw;
 }
 .promo-img-1  {
   width: 70vw;
@@ -188,8 +197,8 @@
   padding-bottom: 4vw;
   background: #e1d8d9;
 }
-.promo-video {
-  display: flex;
+.section-4 .promo-image img{
+  width: 60vw;
 }
 .promo-video iframe {
   width: 30vw;
@@ -198,8 +207,19 @@
 }
 .promo-desc-pointlist {
   font-size: 2vw;
-  width: 80%;
+  width: 70%;
   line-height: 3.4vw;
+}
+.promo-desc-pointlist ul {
+  list-style: none;
+}
+.promo-desc-pointlist ul li::before {
+  content: "\2022";
+  color: #eb2526;
+  font-weight: bolder;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -2em;
 }
 .promo-list-title {
   display: flex;
@@ -213,4 +233,190 @@
   font-size: 2vw;
   width: 80%;
   line-height: 3.4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.promo-desc-numlist > .promo-desc{
+  width: 80%;
+  margin-top: 4vw;
+}
+// SECTION 4 END
+// *************************************
+// SECTION 5 START
+.section-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background: #ffffff;
+}
+.section-5 .promo-title {
+  width: 80%;
+}
+.section-5 .promo-desc {
+  width: 80%;
+}
+.promo-img-5 {
+  width: 60vw;
+}
+// SECTION 5 END
+// *************************************
+// SECTION 6 START
+.section-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background: #f1edec;
+}
+.section-6 .promo-title {
+  width: 80%;
+}
+.section-6 .promo-desc {
+  width: 80%;
+}
+.promo-img-6 {
+  width: 60vw;
+}
+// SECTION 6 END
+// *************************************
+// SECTION 7 START
+.section-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background: #fff199;
+}
+.img-1 {
+  width: 60vw;
+}
+.section-7 .satisfaction-desc {
+  width: 50%;
+}
+// SECTION 8 END
+// *************************************
+// SECTION 9 START
+.section-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background: #ffffff;
+}
+.offer-title {
+  font-size: 4vw;
+  font-weight: bold;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  text-align: left;
+  width: 70%;
+}
+.offer img {
+  width: 50vw;
+  margin-bottom: 4vw;
+}
+.order-button {
+  width: 14vw;
+  height:4vw;
+  border-radius: 5px;
+  background: #662f1a;
+  color: white;
+}
+// SECTION 8 END
+// *************************************
+// SECTION 9 START
+.section-9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background: #f2f2f2;
+}
+.title-customer-review {
+  width: 80%;
+  font-size: 3.6vw;
+  font-weight: bold;
+  margin-top: 2vw;
+  margin-bottom: 6vw;
+}
+.image-customer-review {
+  width: 60vw;
+}
+// SECTION 9 END
+// *************************************
+// SECTION 10 START
+.section-10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background: #b9babc;
+  width: 100%;
+}
+.title-faq {
+  width: 80%;
+  font-size: 3.6vw;
+  font-weight: bold;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.list-faq {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+.list-faq ol li {
+  // line-height: 3vw;
+  font-size: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 0.5vw;
+  font-weight: bold;
+}
+.faq-answer {
+  font-size: 2vw;
+}
+// SECTION 10 END
+// *************************************
+// FOOTER START
+footer {
+  background: #f1f1f1;
+  display: flex;
+}
+.logo-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  padding: 4vw;
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-menu ul {
+  list-style: none;
+}
+.footer-menu ul li{
+  padding: 1vw;
+}
+.footer-menu ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.4vw;
 }
