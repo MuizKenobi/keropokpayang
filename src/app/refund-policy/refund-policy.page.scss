@@ -12,8 +12,15 @@
   background: #e1d8d9;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  margin-top: 40px;
-  padding-top: 40px;
+  margin-top: 5vh;
+  padding-top: 5vh;
+}
+.policy {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .title {
   display: flex;
@@ -24,14 +31,21 @@
   margin-bottom: 3vw;
 }
 .sub-title {
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: bold;
+  width: 85%;
+}
+.desc {
+  font-size: 1.4vw;
+  width: 85%;
+  margin-bottom: 4vw;
 }
 .section-2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 10vh;
+  margin-bottom: 5vh;
   background: #e1d8d9;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
