@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'shipping-policy',
     loadChildren: () => import('./shipping-policy/shipping-policy.module').then( m => m.ShippingPolicyPageModule)
   },
+  {
+    path: 'refund-policy',
+    loadChildren: () => import('./refund-policy/refund-policy.module').then( m => m.RefundPolicyPageModule)
+  },
 ];
 
 @NgModule({

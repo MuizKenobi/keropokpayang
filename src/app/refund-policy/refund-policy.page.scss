@@ -23,23 +23,9 @@
   margin-top: 3vw;
   margin-bottom: 3vw;
 }
-.policy {
-  width: 90%;
-}
-.policy ul {
-  list-style: none
-}
-.policy ul li::before {
-  content: "\2022";
-  color: #eb2526;
-  font-weight: bolder;
-  display: inline-block; 
-  width: 1em;
-  margin-bottom: 1vw;
-  font-size: 2vw;
-}
-.policy ul li {
-  font-size: 1.6vw;
+.sub-title {
+  font-size: 3vw;
+  font-weight: bold;
 }
 .section-2 {
   display: flex;
@@ -49,7 +35,4 @@
   background: #e1d8d9;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-}
-.email {
-  font-size: 1.2vw;
 }
