@@ -1,8 +1,6 @@
 #card {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  margin: 0 auto;
 }
 .section-1 {
   display: flex;
@@ -10,9 +8,6 @@
   align-items: center;
   flex-direction: column;
   background: #e1d8d9;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  margin-top: 5vh;
   padding-top: 5vh;
 }
 .policy {
@@ -27,7 +22,7 @@
   text-align: center;
   font-size: 3.6vw;
   font-weight: bold;
-  margin-top: 3vw;
+  margin-top: 1vw;
   margin-bottom: 3vw;
 }
 .sub-title {
@@ -44,9 +39,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
-  margin-bottom: 5vh;
+  height: 2vh;
   background: #e1d8d9;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
 }

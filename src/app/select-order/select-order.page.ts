@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-refund-policy',
-  templateUrl: './refund-policy.page.html',
-  styleUrls: ['./refund-policy.page.scss'],
+  selector: 'app-select-order',
+  templateUrl: './select-order.page.html',
+  styleUrls: ['./select-order.page.scss'],
 })
-export class RefundPolicyPage implements OnInit {
+export class SelectOrderPage implements OnInit {
 
   constructor(public modalCtrl: ModalController) { }
 

@@ -1,0 +1,96 @@
+<ion-header>  
+  <ion-toolbar>  
+    <ion-title mode='ios' color="light">Make Order</ion-title>  
+    <ion-buttons slot='end'>
+      <ion-button color="light" (click)='dismiss()'>
+        <ion-icon name='close-circle' style='margin-right: 1rem'></ion-icon> 
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>  
+</ion-header> 
+<ion-content>
+  <div id="card">
+    <div class="section-1">
+      <!-- TITLE -->
+      <div class="subtitle">
+        IKUTI LANGKAH BERIKUT UNTUK MEMBUAT TEMPAHAN
+      </div>
+      <!-- CARA MEMBELI -->
+      <div class="grid-icon">
+        <!-- CARA 1 -->
+        <div class="row-1">
+          <img src="assets\icon\002-clicking.png" class="row-icon">
+          <div class="desc">Buat pilihan dan jumlah</div>
+        </div>
+        <!-- CARA 2 -->
+        <div class="row-2">
+          <img src="assets\icon\001-edit.png" class="row-icon">
+          <div class="desc">Isi maklumat yang diperlukan</div>
+        </div>
+        <!-- CARA 3 -->
+        <div class="row-3">
+          <img src="assets\icon\003-email.png" class="row-icon">
+          <div class="desc">Terima maklum balas melalui email</div>
+        </div>
+      </div>
+    </div>
+    <div class="section-2">
+      <div class="title">
+        SILA BUAT PILIHAN
+      </div>
+      <div class="package-box">
+        <!-- PACKAGE 1 -->
+        <div class="package-1">
+          <!-- Package Image -->
+          <img src="assets\img\offer2.jpg" class="package-img">
+          <div class="buy-menu">
+            <!-- Radio Button -->
+            <ion-radio value="package-1" class="radio-button"></ion-radio>
+            <!-- Counter -->
+            <div class="counter">
+              <div class="minus"><button>-</button></div>
+              <div class="count">1</div>
+              <div class="add"><button>+</button></div>
+            </div>
+            <div class="display">RM 100</div>
+          </div>
+        </div>
+        <!-- PACKAGE 2 -->
+        <div class="package-2">
+          <!-- Package Image -->
+          <img src="assets\img\offer1.png" class="package-img">
+          <div class="buy-menu">
+            <!-- Radio Button -->
+            <ion-radio value="package-2" class="radio-button"></ion-radio>
+            <!-- Counter -->
+            <div class="counter">
+              <div class="minus"><button>-</button></div>
+              <div class="count">1</div>
+              <div class="add"><button>+</button></div>
+            </div>
+            <div class="display">RM 100</div>
+          </div>
+        </div>
+        <!-- PACKAGE 2 -->
+        <div class="package-3">
+          <!-- Package Image -->
+          <img src="assets\img\offer3.png" class="package-img">
+          <div class="buy-menu">
+            <!-- Radio Button -->
+            <ion-radio value="package-3" class="radio-button"></ion-radio>
+            <!-- Counter -->
+            <div class="counter">
+              <div class="minus"><button>-</button></div>
+              <div class="count">1</div>
+              <div class="add"><button>+</button></div>
+            </div>
+            <div class="display">RM 100</div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="checkout">BELI SEKARANG !</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

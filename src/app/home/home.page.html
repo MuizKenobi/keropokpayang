@@ -29,7 +29,7 @@
       </div>
       <!-- SUBMIT BUTTON -->
       <div class="button">
-        <button class="submit-button">HANTAR SEKARANG</button>
+        <button (click)="openOrderModal()" class="submit-button">HANTAR SEKARANG</button>
       </div>
       <!-- SPONSORS -->
       <div class="sponsor">
@@ -261,7 +261,7 @@
         <!-- <button class="order-button">ORDER NOW</button> -->
       </div>
       <div class="offer">
-        <a href="#"><img src="assets\img\offer2.png" alt="" class="offer-img-1"></a>
+        <a href="#"><img src="assets\img\offer2.jpg" alt="" class="offer-img-1"></a>
         <!-- <button class="order-button">ORDER NOW</button> -->
       </div>
       <div class="offer">
@@ -324,8 +324,8 @@
       <div class="footer-menu">
         <ul>
           <li><a href="#">service.payangs@gmail.com</a></li>
-          <li><a routerLink="/shipping-policy">Shipping Policy</a></li>
-          <li><a routerLink="/refund-policy">Refund Policy</a></li>
+          <li><a (click)="openShippingPolicyModal()">Shipping Policy</a></li>
+          <li><a (click)="openRefundPolicyModal()">Refund Policy</a></li>
         </ul>
       </div>
     </footer>

@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'refund-policy',
     loadChildren: () => import('./refund-policy/refund-policy.module').then( m => m.RefundPolicyPageModule)
   },
+  {
+    path: 'select-order',
+    loadChildren: () => import('./select-order/select-order.module').then( m => m.SelectOrderPageModule)
+  },
+  {
+    path: 'summary-order',
+    loadChildren: () => import('./summary-order/summary-order.module').then( m => m.SummaryOrderPageModule)
+  },
 ];
 
 @NgModule({
