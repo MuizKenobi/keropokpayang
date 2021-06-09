@@ -1,9 +1,153 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>checkout</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <div id="card">
+    <!-- SECTION 1 : Contact Info -->
+    <div class="section-1">
+      <ion-grid>
+        <!-- LABEL -->
+        <ion-row>
+          <ion-col>
+            <div class="label">
+              <ion-label>Contact information</ion-label>
+            </div>
+          </ion-col>
+        </ion-row>
+        <!-- EMAIL -->
+        <ion-row>
+          <ion-col>
+            <ion-item color="light">
+              <ion-label position="floating">Email</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <!-- SECTION 2 : Shipping Address -->
+    <div class="section-2">
+      <ion-grid>
+        <!-- LABEL -->
+        <ion-row>
+          <ion-col>
+            <div class="label">
+              <ion-label>Shipping address</ion-label>
+            </div>
+          </ion-col>
+        </ion-row>
+        <!-- ROW 1 -->
+        <ion-row>
+          <!-- F NAME -->
+          <ion-col>
+            <ion-item color="light">
+              <ion-label position="floating">First name</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+          <!-- L NAME -->
+          <ion-col>
+            <ion-item color="light">
+              <ion-label position="floating">Last name</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <!-- Row 2 -->
+        <ion-row>
+          <!-- ADDRESS -->
+          <ion-col>
+            <ion-item color="light">
+              <ion-label position="floating">Address</ion-label>
+              <ion-textarea></ion-textarea>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <!-- Row 3 -->
+        <ion-row>
+          <!-- APARTMENTS -->
+          <ion-col>
+            <ion-item color="light">
+              <ion-label position="floating">Apartment, suite, etc.</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <!-- Row 4 -->
+        <ion-row>
+          <!-- POSTCODE -->
+          <ion-col>
+            <ion-item color="light">
+              <ion-label position="floating">Postcode</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+          <!-- CITY -->
+          <ion-col>
+            <ion-item color="light">
+              <ion-label position="floating">City</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <!-- Row 5 -->        
+        <ion-row>
+          <!-- STATE -->
+          <ion-col>
+            <ion-item color="light">
+              <ion-label position="floating">State/territory</ion-label>
+              <ion-select interface="popover" color="light" class="options">
+                <ion-select-option value="kualalumpur">Kuala Lumpur</ion-select-option>
+                <ion-select-option value="pahang">Pahang</ion-select-option>
+                <ion-select-option value="kelantan">Kelantan</ion-select-option>
+                <ion-select-option value="terengganu">Terengganu</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+          <!-- COUNTRY -->
+          <ion-col>
+            <ion-item color="light">
+              <ion-label position="floating">Country/Region</ion-label>
+              <ion-select interface="popover" color="light" class="options">
+                <ion-select-option value="malaysia">Malaysia</ion-select-option>
+                <ion-select-option value="indonesia">Indonesia</ion-select-option>
+                <ion-select-option value="myanmar">Myanmar</ion-select-option>
+                <ion-select-option value="thailand">Thailand</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <!-- Row 6 -->        
+        <ion-row>
+          <!-- CHECKBOX -->
+          <ion-col>
+            <ion-item color="light">
+              <ion-label position="floating">Phone - mark the above checkbox to get SMS updates.</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item color="light">
+              <ion-label>Save this information for next time</ion-label>
+              <ion-checkbox slot="start"></ion-checkbox>
+          </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <!-- Section 3 : Button -->
+    <div class="section-3">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3">
+            <ion-button>Continue to payment</ion-button>
+          </ion-col>
+          <ion-col size="3">
+            <ion-item href="summary-order" color="light">
+              <ion-label>Return to cart</ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
 </ion-content>
