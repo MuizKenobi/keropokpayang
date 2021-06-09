@@ -1,15 +1,62 @@
-<ion-header>  
-  <ion-toolbar>  
-    <ion-title mode='ios' color="light">Order Summary</ion-title>  
-    <ion-buttons slot='end'>
-      <ion-button color="light" (click)='dismiss()'>
-        <ion-icon name='close-circle' style='margin-right: 1rem'></ion-icon> 
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>  
-</ion-header> 
 <ion-content>
-  <div class="card">
-
+  <div id="card">
+    <div class="section-1">
+      <div class="heading">YOUR ORDER</div>
+      <hr>
+      <!-- Table Produk -->
+      <ion-grid class="product-price">
+        <!-- Table head -->
+        <ion-row>
+          <ion-col>Product</ion-col>
+          <ion-col>Quantity</ion-col>
+          <ion-col>Price</ion-col>
+          <ion-col>Total</ion-col>
+        </ion-row>
+        <hr>
+        <!-- Table content -->
+        <ion-row>
+          <ion-col>Keropok 9PAX</ion-col>
+          <ion-col>1</ion-col>
+          <ion-col>RM144</ion-col>
+          <ion-col>RM144</ion-col>
+        </ion-row>
+        <hr>
+      </ion-grid>
+      <!-- Table Harga -->
+      <ion-grid class="total-price">
+        <ion-row>
+          <ion-col>Subtotal</ion-col>
+          <ion-col>RM 144</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>Shipping & Handling</ion-col>
+          <ion-col>RM 10</ion-col>
+        </ion-row>
+        <!--  -->
+        <ion-row>
+          <ion-col class="discount">
+            <ion-button class="apply-code">Apply</ion-button>
+            <ion-input class="code-input" placeholder="Discount Code"></ion-input>
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+        <!--  -->
+        <ion-row class="final-price">
+          <ion-col>GRAND TOTAL</ion-col>
+          <ion-col>RM154<hr></ion-col>
+        </ion-row>
+        <!--  -->
+        <ion-row>
+          <ion-col>
+            <ion-button (click)="offerPage()" class="update-button">UPDATE</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button (click)="checkoutPage()" color="danger" class="checkout-button">
+              Proceed to Checkout
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </div>
 </ion-content>

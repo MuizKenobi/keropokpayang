@@ -1,13 +1,3 @@
-<ion-header>  
-  <ion-toolbar>  
-    <ion-title mode='ios' color="light">Make Order</ion-title>  
-    <ion-buttons slot='end'>
-      <ion-button color="light" (click)='dismiss()'>
-        <ion-icon name='close-circle' style='margin-right: 1rem'></ion-icon> 
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>  
-</ion-header> 
 <ion-content>
   <div id="card">
     <div class="section-1">
@@ -15,24 +5,32 @@
       <div class="subtitle">
         IKUTI LANGKAH BERIKUT UNTUK MEMBUAT TEMPAHAN
       </div>
-      <!-- CARA MEMBELI -->
-      <div class="grid-icon">
-        <!-- CARA 1 -->
-        <div class="row-1">
-          <img src="assets\icon\002-clicking.png" class="row-icon">
-          <div class="desc">Buat pilihan dan jumlah</div>
-        </div>
-        <!-- CARA 2 -->
-        <div class="row-2">
-          <img src="assets\icon\001-edit.png" class="row-icon">
-          <div class="desc">Isi maklumat yang diperlukan</div>
-        </div>
-        <!-- CARA 3 -->
-        <div class="row-3">
-          <img src="assets\icon\003-email.png" class="row-icon">
-          <div class="desc">Terima maklum balas melalui email</div>
-        </div>
-      </div>
+      <!-- COL 1 : ICON -->
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="assets\icon\002-clicking.png" class="row-icon">
+          </ion-col>
+          <ion-col>
+            <img src="assets\icon\001-edit.png" class="row-icon">
+          </ion-col>
+          <ion-col>
+            <img src="assets\icon\003-email.png" class="row-icon">
+          </ion-col>
+        </ion-row>
+        <!-- COL 2 : WORD -->
+        <ion-row>
+          <ion-col>
+            <div class="desc">Buat pilihan dan jumlah</div>
+          </ion-col>
+          <ion-col>
+            <div class="desc">Isi maklumat yang diperlukan</div>
+          </ion-col>
+          <ion-col>
+            <div class="desc">Terima maklum balas melalui email</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div>
     <div class="section-2">
       <div class="title">
@@ -52,7 +50,7 @@
               <div class="count">1</div>
               <div class="add"><button>+</button></div>
             </div>
-            <div class="display">RM 100</div>
+            <div class="display">RM 144</div>
           </div>
         </div>
         <!-- PACKAGE 2 -->
@@ -68,7 +66,7 @@
               <div class="count">1</div>
               <div class="add"><button>+</button></div>
             </div>
-            <div class="display">RM 100</div>
+            <div class="display">RM 80</div>
           </div>
         </div>
         <!-- PACKAGE 2 -->
@@ -84,12 +82,13 @@
               <div class="count">1</div>
               <div class="add"><button>+</button></div>
             </div>
-            <div class="display">RM 100</div>
+            <div class="display">RM 6</div>
           </div>
         </div>
-        <div class="button">
-          <button class="checkout">BELI SEKARANG !</button>
-        </div>
+        <div class="total">JUMLAH : RM 144</div> 
+        <ion-button (click)="orderSummary()" class="checkout" color="warning">
+          BELI SEKARANG
+        </ion-button>
       </div>
     </div>
   </div>

@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'summary-order',
     loadChildren: () => import('./summary-order/summary-order.module').then( m => m.SummaryOrderPageModule)
   },
+  {
+    path: 'checkout',
+    loadChildren: () => import('./checkout/checkout.module').then( m => m.CheckoutPageModule)
+  },
 ];
 
 @NgModule({

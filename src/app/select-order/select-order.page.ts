@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-select-order',
@@ -8,12 +8,12 @@ import { ModalController } from '@ionic/angular';
 })
 export class SelectOrderPage implements OnInit {
 
-  constructor(public modalCtrl: ModalController) { }
+  constructor(private route : Router) { }
 
   ngOnInit() {
   }
 
-  dismiss() {  
-    this.modalCtrl.dismiss();  
+  orderSummary() {
+    this.route.navigate(['/summary-order']);
   }
 }
